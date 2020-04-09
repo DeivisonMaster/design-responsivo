@@ -1,0 +1,229 @@
+@charset "UTF-8";
+body {
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* considera apenas width e height retirando border e padding inseridos por padrão*/
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  color: #00ccff;
+  text-decoration: none;
+  font-size: 1.6em;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img,
+picture,
+video,
+embed {
+  max-width: 100%;
+}
+
+/*
+.clearfix:before, .clearfix:after {
+    content: " "; 
+    display: table; 
+}
+
+.clearfix:after{
+    clear: both;
+}
+
+.clearfix{
+    *zoom: 1;
+}
+*/
+.clear {
+  clear: both;
+}
+
+/*=========================== WEBSITE ==========================*/
+#container {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+#container #header {
+  width: 100%;
+  height: 48px;
+  margin: 3.6em 0 3.6em 0;
+}
+
+#container #header img {
+  float: left;
+  width: 20.744680851064%;
+}
+
+#container #header #nav-header {
+  width: 74.46808510638298%;
+  float: right;
+}
+
+#container #header #nav-header ul {
+  float: right;
+}
+
+#container #header #nav-header ul li {
+  font-size: 1.2em;
+  margin: 1em 0 0 2em;
+  display: inline-block;
+}
+
+#container #header #nav-header ul li a {
+  color: #999;
+}
+
+#container #banner {
+  background: url("../img/banner.jpg");
+  height: 450px;
+  margin: 0 0 4.8em 0;
+  position: relative;
+}
+
+#container #banner #banner-msg {
+  width: 42.5531914893617%;
+  padding: 2.4em 4em 2.4em 4em;
+  position: relative;
+  top: 48px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+#container #banner #banner-msg h1 {
+  margin: 0 0 0 0;
+  font-size: 4em;
+  font-weight: 200;
+  color: #fff;
+}
+
+#container #banner #banner-msg p {
+  font-size: 1.8em;
+  font-weight: 200;
+  color: #fff;
+}
+
+#container #principal .coluna {
+  width: 23.404255319149%;
+  /* 264px / 1128px */
+  float: left;
+  margin-right: 2.127659574468%;
+}
+
+#container #principal .coluna h2 {
+  font-size: 2.4em;
+  font-weight: 200;
+}
+
+#container #principal .coluna p {
+  font-size: 1.6em;
+}
+
+#container #principal .coluna:last-child {
+  margin-right: 0;
+  border: 1px solid red;
+}
+
+#container footer {
+  width: 100%;
+  margin: 2.4em 0 2.4em 0;
+  float: left;
+  clear: both;
+}
+
+#container footer p {
+  margin-bottom: 0;
+}
+
+#container footer small {
+  font-size: 1em;
+}
+
+#container footer a {
+  font-size: 1em;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+@media screen and (max-width: 1128px) {
+  #container {
+    padding: 0 2.4em 0 2.4em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #header img {
+    margin-top: 1.2em;
+  }
+  #banner #banner-msg {
+    width: 65% !important;
+  }
+  .coluna {
+    width: 48% !important;
+    margin: 0 2% 2.4em 0;
+  }
+  .coluna:nth-child(even) {
+    margin-right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 718px) {
+  #banner {
+    position: relative !important;
+    float: left !important;
+    margin: 0 !important;
+    height: 150px !important;
+  }
+  #banner #banner-msg {
+    position: relative !important;
+    display: block !important;
+    float: left !important;
+    margin-top: 100px !important;
+    width: 100% !important;
+    background: #000 !important;
+  }
+  #banner #banner-msg h1 {
+    font-size: 2.5em !important;
+  }
+  #principal {
+    margin-top: 450px !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #nav-header {
+    width: 100% !important;
+  }
+  #nav-header ul {
+    float: left !important;
+    font-size: 0.8em;
+  }
+  #nav-header ul li:first-child {
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .coluna {
+    width: 100% !important;
+  }
+  #banner {
+    height: 120px !important;
+  }
+  #banner #banner-msg {
+    position: relative !important;
+    display: block !important;
+    float: left !important;
+    margin-top: 80px !important;
+    width: 100% !important;
+    background: #000 !important;
+    padding: 1.2em 2em 1.2em 2em !important;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */
