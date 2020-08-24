@@ -48,6 +48,24 @@ embed{
     clear: both;
 }
 
+
+/* =================== Classes utilitárias para uso no HTML ======================== */
+.fLeft {float: left}
+.fRight {float: right;}
+.fNone {float: none;}
+
+.dBlock {display: block;}
+.dInline {display: inline;}
+.dInlineBlock {display: inline-block;}
+.dNone {display: none;}
+
+.pAbsolute {position: absolute;}
+.pRelative {position: relative;}
+
+.cBoth {clear: both;}
+.cLeft {clear: left;}
+.cRight {clear: right;}
+
 /*=========================== WEBSITE ==========================*/
 #container{
     max-width: 1128px;
